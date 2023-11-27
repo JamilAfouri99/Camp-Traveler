@@ -31,11 +31,11 @@ const config: Config = {
         },
       },
       backgroundImage: {
-        'bg-img-1': "url('/img-1.png')",
-        'bg-img-2': "url('/img-2.png')",
-        'feature-bg': "url('/feature-bg.png')",
-        pattern: "url('/pattern.png')",
-        'pattern-2': "url('/pattern-bg.png')",
+        'bg-img-1': "url('/png/img-1.png')",
+        'bg-img-2': "url('/png/img-2.png')",
+        'feature-bg': "url('/png/feature-bg.png')",
+        pattern: "url('/png/pattern.png')",
+        'pattern-2': "url('/png/pattern-bg.png')",
       },
       screens: {
         xs: '400px',
