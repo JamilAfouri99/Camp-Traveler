@@ -70,17 +70,17 @@ export const FOOTER_CONTACT_INFO = {
   title: 'Contact Us',
   links: [
     { label: 'Admin Officer', value: '+962-79-620-8286' },
-    { label: 'Email Officer', value: 'afoure95@gmail.com"' },
+    { label: 'Email Officer', value: 'afoure95@gmail.com' },
   ],
 };
 
 export const SOCIALS = {
   title: 'Social',
   links: [
-    '/facebook.svg',
-    '/instagram.svg',
-    '/twitter.svg',
-    '/youtube.svg',
-    '/wordpress.svg',
+    '/svg/facebook.svg',
+    '/svg/instagram.svg',
+    '/svg/twitter.svg',
+    '/svg/youtube.svg',
+    '/svg/wordpress.svg',
   ],
 };

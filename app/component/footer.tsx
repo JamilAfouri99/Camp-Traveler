@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { FOOTER_CONTACT_INFO, FOOTER_LINKS } from "../utils/constants";
+import { FOOTER_CONTACT_INFO, FOOTER_LINKS, SOCIALS } from "../utils/constants";
 
 // images
 import Hilink from "@/public/svg/hilink-logo.svg";
@@ -14,7 +14,7 @@ const Footer = () => {
           <Link href="/" className="mb-10">
             <Image src={Hilink} alt="logo" width={74} height={29} />
           </Link>
-          <div className="flex-flex-wrap gap-10 sm:justify-between md:flex-1">
+          <div className="flex flex-wrap gap-10 sm:justify-between md:flex-1">
             {FOOTER_LINKS.map((columns) => (
               <FooterColumn key={columns.title} title={columns.title}>
                 <ul className="regular-14 flex flex-col gap-4 text-gray-30">
@@ -31,7 +31,7 @@ const Footer = () => {
               <FooterColumn title={FOOTER_CONTACT_INFO.title}>
                 {FOOTER_CONTACT_INFO.links.map((link) => (
                   <Link
-                    href={""}
+                    href={"/"}
                     key={link.label}
                     className="flex gap-4 md:flex-col lg:flex-row"
                   >
@@ -43,8 +43,29 @@ const Footer = () => {
                 ))}
               </FooterColumn>
             </div>
+
+            <div className="flex flex-col gap-5">
+              <FooterColumn title={SOCIALS.title}>
+                <ul className="regular-14 flex flex-row gap-4 text-gray-30">
+                  {SOCIALS.links.map((link) => (
+                    <Link
+                      href={"/"}
+                      key={link}
+                      className="flex gap-4 md:flex-col lg:flex-row"
+                    >
+                      <Image src={link} alt="logo" width={24} height={24} />
+                    </Link>
+                  ))}
+                </ul>
+              </FooterColumn>
+            </div>
           </div>
         </div>
+
+        <div className="border bg-gray-20"></div>
+        <p className="regular-14 w-full text-center text-gray-30">
+          2023 Hilink | All rights reserved
+        </p>
       </div>
     </footer>
   );
